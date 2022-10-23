@@ -14,17 +14,17 @@ const Navbar = () => {
           <ul>
             <li>
               <NavLink end to="/" className="links">
-                Character
+                Characters
               </NavLink>
             </li>
             <li>
               <NavLink to="/episodes" className="links">
-                Episode
+                Episodes
               </NavLink>
             </li>
             <li>
               <NavLink to="/quotes" className="links">
-                Dates
+                Quotes
               </NavLink>
             </li>
             <li>
