@@ -25,7 +25,6 @@ const AppRouter = () => {
           <Route path=":id" element={<DetailsEpisode />} />
         </Route>
 
-        <Route path="/episodes" element={<EpisodesPage />} />
         <Route path="/deaths" element={<DeathsPage />} />
         <Route path="/quotes" element={<QuotesPage />} />
       </Routes>
