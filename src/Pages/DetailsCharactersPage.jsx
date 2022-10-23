@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import DetailsCharacter from "../components/Characters/DetailsCharacter";
 
 const DetailsCharactersPage = () => {
-  return (
-    <div>DetailsCharactersPage</div>
-  )
-}
+  return <DetailsCharacter />;
+};
 
-export default DetailsCharactersPage
+export default DetailsCharactersPage;

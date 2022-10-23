@@ -9,9 +9,7 @@ const CharacterList = () => {
     const characters = await data.json();
     setCharacters(characters);
   };
-
-  console.log(characters);
-
+  
   useEffect(() => {
     getCharacters();
   }, []);
