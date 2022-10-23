@@ -1,9 +1,10 @@
 import React from 'react'
+import EpisodeList from '../components/Episodes/EpisodeList'
 
 const EpisodesPage = () => {
   return (
-    <div>EpisodesPage</div>
-  )
+<EpisodeList/>
+    )
 }
 
 export default EpisodesPage

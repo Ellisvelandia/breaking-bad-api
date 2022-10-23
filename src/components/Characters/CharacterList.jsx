@@ -16,7 +16,7 @@ const CharacterList = () => {
 
   return (
     <div>
-      <p>Found {characters.length} Results</p>
+      <p>Results found{characters.length}</p>
       <div className="characters-list">
         {characters.map((character) => (
           <Link

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Deaths from "../components/Deaths/Deaths";
 
 const DeathsPage = () => {
-  return (
-    <div>DeathsPage</div>
-  )
-}
+  return <Deaths />;
+};
 
-export default DeathsPage
+export default DeathsPage;

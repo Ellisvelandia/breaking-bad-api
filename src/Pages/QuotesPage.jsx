@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import Quotes from "../components/Quotes/Quotes";
 
 const QuotesPage = () => {
-  return (
-    <div>
-      quotes
-    </div>
-  )
-}
+  return <Quotes />;
+};
 
-export default QuotesPage
+export default QuotesPage;
