@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Loader from "../Loader";
 
 const DetailsEpisode = () => {
   const [episode, setEpisode] = useState({});
@@ -20,31 +21,39 @@ const DetailsEpisode = () => {
   }, []);
 
   return (
-    <div className="details-episode">
-      <div className="card-information-episode">
-        <p>
-          Title of Episode: <span>{episode.title}</span>
-        </p>
-        <p>
-          Num of Episode: <span>{episode.episode}</span>
-        </p>
-        <p>
-          Season: <span>{episode.season}</span>
-        </p>
-        <p>
-          Air Date: <span>{episode.air_date}</span>
-        </p>
+    <>
+      {Object.entries(episode).length ? (
+        <div className="details-episode">
+          <div className="card-information-episode">
+            <p>
+              Title of Episode: <span>{episode.title}</span>
+            </p>
+            <p>
+              Num of Episode: <span>{episode.episode}</span>
+            </p>
+            <p>
+              Season: <span>{episode.season}</span>
+            </p>
+            <p>
+              Air Date: <span>{episode.air_date}</span>
+            </p>
 
-        <span id="characters">
-          Characters
-          <ul>
-            {episode.characters?.map((character) => (
-              <li key={character}>{character}</li>
-            ))}
-          </ul>
-        </span>
-      </div>
-    </div>
+            <span id="characters">
+              Characters
+              <ul>
+                {episode.characters?.map((character) => (
+                  <li key={character}>{character}</li>
+                ))}
+              </ul>
+            </span>
+          </div>
+        </div>
+      ) : (
+        <div className="container-loading">
+          <Loader />
+        </div>
+      )}
+    </>
   );
 };
 
